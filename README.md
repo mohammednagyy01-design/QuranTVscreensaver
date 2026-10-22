@@ -34,6 +34,9 @@ res/drawable-xhdpi/          الأيقونة والـ banner
 ```
 الخطوط والخلفيات (`assets/`) موجودة داخل الـ APK فقط، وليست في المستودع.
 
+## التواصل
+لو لقيت مشكلة أو عندك اقتراح: افتح [Issue](../../issues) أو راسلني على mohammednagyy01@gmail.com
+
 ## Credits
 مصادر البيانات وحقوق الصور في [CREDITS.md](CREDITS.md).
 
