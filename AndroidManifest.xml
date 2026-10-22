@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sa.riyadh.prayerdream">
+    <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="30" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature android:name="android.software.leanback" android:required="false" />
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+    <application
+        android:label="Quran TV"
+        android:icon="@drawable/ic_launcher"
+        android:banner="@drawable/banner">
+        <meta-data android:name="developer" android:value="Mohamed Nagy" />
+        <meta-data android:name="developer.email" android:value="mohammednagyy01@gmail.com" />
+        <activity
+            android:name=".QuranActivity"
+            android:label="Quran TV"
+            android:icon="@drawable/ic_launcher"
+            android:banner="@drawable/banner"
+            android:exported="true"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service
+            android:name=".PrayerDream"
+            android:exported="true"
+            android:label="Quran TV"
+            android:icon="@drawable/ic_launcher"
+            android:permission="android.permission.BIND_DREAM_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.dreams.DreamService" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>
