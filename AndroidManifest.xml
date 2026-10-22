@@ -9,8 +9,6 @@
         android:label="Quran TV"
         android:icon="@drawable/ic_launcher"
         android:banner="@drawable/banner">
-        <meta-data android:name="developer" android:value="Mohamed Nagy" />
-        <meta-data android:name="developer.email" android:value="mohammednagyy01@gmail.com" />
         <activity
             android:name=".QuranActivity"
             android:label="Quran TV"

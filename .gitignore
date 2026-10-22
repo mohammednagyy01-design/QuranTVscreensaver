@@ -16,3 +16,6 @@ local.properties
 .DS_Store
 .idea/
 *.iml
+
+# Release artifacts (publish via GitHub Releases)
+*.apk
