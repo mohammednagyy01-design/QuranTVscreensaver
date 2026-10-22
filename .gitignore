@@ -1,0 +1,18 @@
+# Build output
+/build/
+/bin/
+/gen/
+*.class
+*.dex
+*.ap_
+
+# Signing material - never commit
+*.jks
+*.keystore
+keystore.properties
+local.properties
+
+# OS / IDE
+.DS_Store
+.idea/
+*.iml
